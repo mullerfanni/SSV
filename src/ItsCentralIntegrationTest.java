@@ -124,7 +124,7 @@ public class ItsCentralIntegrationTest {
     @Test
     public void testItsCentralEcho() {
         logger.info("testItsCentralEcho: START");
-        // Arrange
+        
 
         // Act
         ResponseEntity<String> response = restTemplate.getForEntity(ITSCENTRAL_URI + ECHO_URI, String.class);
