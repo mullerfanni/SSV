@@ -126,7 +126,7 @@ public class ItsCentralIntegrationTest {
         logger.info("testItsCentralEcho: START");
         
 
-        // Act
+        
         ResponseEntity<String> response = restTemplate.getForEntity(ITSCENTRAL_URI + ECHO_URI, String.class);
 
         // Assert
