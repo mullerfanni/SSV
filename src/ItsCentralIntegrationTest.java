@@ -126,11 +126,11 @@ public class ItsCentralIntegrationTest {
         logger.info("testItsCentralEcho: START");
         
 
-        // Act
+        
         ResponseEntity<String> response = restTemplate.getForEntity(ITSCENTRAL_URI + ECHO_URI, String.class);
 
         // Assert
-        assertThat(response.getStatusCodeValue(), is(200));
+        
         assertThat(response.getBody(), containsString("Got it!"));
         logger.info("testItsCentralEcho: END");
     }
